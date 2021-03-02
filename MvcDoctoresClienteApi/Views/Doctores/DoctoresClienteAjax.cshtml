@@ -1,0 +1,54 @@
+﻿@section scripts{ 
+    <script>
+        var url = "https://apidoctorpgs.azurewebsites.net/";
+        $(document).ready(function () {
+            cargarDoctores();
+        });
+
+        function cargarDoctores() {
+            var request = "api/doctores";
+            $.ajax({
+                url: url + request,
+                method: "GET",
+                dataType: "json",
+                success: function (data) {
+                    var html = "";
+                    $.each(data, function (ind, doctor) {
+                        html += "<tr>";
+                        html += "<td>" + doctor.apellido + "</td>";
+                        html += "<td>" + doctor.especialidad + "</td>";
+                        html += "<td>" + doctor.salario + "</td>";
+                        html += "<td>" + doctor.hospital + "</td>";
+                        html += "</tr>";
+                    });
+                    $("#tabladoctores tbody").html(html);
+                }
+            });
+        }
+
+        function cargarEspecialidades() {
+
+        }
+    </script>
+}
+
+<h1>Consumo Api Cliente</h1>
+
+<form method="post">
+    <label>Seleccione especialidad: </label>
+    <select name="especialidad" id="especialidad">
+    </select>
+    <button type="button" class="btn btn-info" id="botonbuscar">Mostrar doctores</button>
+</form>
+<hr/>
+<table class="table table-active" id="tabladoctores">
+    <thead>
+        <tr>
+            <th>Apellido</th>
+            <th>Especialidad</th>
+            <th>Salario</th>
+            <th>Hospital</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
