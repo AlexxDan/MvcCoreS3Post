@@ -9,21 +9,19 @@
   },
   "packageFolders": {
     "C:\\Users\\Serra\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Serra\\Documents\\Visual Studio 2019\\Projects\\MvcCoreAzure\\MvcCoreAzure\\MvcCoreAzure.csproj",
-      "projectName": "MvcCoreAzure",
-      "projectPath": "C:\\Users\\Serra\\Documents\\Visual Studio 2019\\Projects\\MvcCoreAzure\\MvcCoreAzure\\MvcCoreAzure.csproj",
+      "projectUniqueName": "C:\\Users\\Serra\\Documents\\Visual Studio 2019\\Projects\\MvcCoreAzureBlank\\MvcCoreAzureBlank\\MvcCoreAzureBlank.csproj",
+      "projectName": "MvcCoreAzureBlank",
+      "projectPath": "C:\\Users\\Serra\\Documents\\Visual Studio 2019\\Projects\\MvcCoreAzureBlank\\MvcCoreAzureBlank\\MvcCoreAzureBlank.csproj",
       "packagesPath": "C:\\Users\\Serra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Serra\\Documents\\Visual Studio 2019\\Projects\\MvcCoreAzure\\MvcCoreAzure\\obj\\",
+      "outputPath": "C:\\Users\\Serra\\Documents\\Visual Studio 2019\\Projects\\MvcCoreAzureBlank\\MvcCoreAzureBlank\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\Serra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -70,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
