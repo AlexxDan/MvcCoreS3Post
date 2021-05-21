@@ -1,0 +1,30 @@
+﻿<h1>ListFileAWS</h1>
+
+<a asp-action="Index" asp-controller="UploadFile">
+    Volver Index
+</a>
+
+@if (Model != null)
+{
+<ul class="list-group">
+    @foreach (String file in Model)
+    {
+        <li class="list-group-item">
+            <a asp-action="FileAWS" asp-controller="UploadFile"
+               asp-route-filename="@file" class="btn btn-info">
+                View @file File
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a asp-action="FileImg" asp-controller="UploadFile"
+               asp-route-filename="@file" class="btn btn-secondary">
+                Imagen @file ver
+            </a>
+        </li>
+    }
+</ul>
+}
+else
+{
+    <h1 style="color:red"> No hay fichero en el Bucket</h1>
+}
